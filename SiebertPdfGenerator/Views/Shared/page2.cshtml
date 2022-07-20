@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 2</title>
+    <link rel='stylesheet' id='typekit-css' href='//use.typekit.net/vad1ces.css?ver=5.9.2' media='all' />
+
+    <style>
+        body {
+            zoom: 70%;
+            font-kerning: normal;
+            text-rendering: optimizeLegibility;
+        }
+
+        * {
+            letter-spacing: .6mm !important;
+        }
+
+        body {
+            font-family: neue-haas-grotesk-display, sans-serif;
+            font-size: 18px;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        header {
+            display: table;
+            border-bottom: 1px solid #b4b4b4;
+        }
+
+        .header-left {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+            .header-left h1 {
+                margin: 0;
+                color: #0d66a6;
+            }
+
+        .header-right {
+            display: table-cell;
+            vertical-align: middle;
+            white-space: nowrap;
+            text-align: right;
+        }
+
+            .header-right strong {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 24px;
+            }
+
+        .subheader {
+            display: table;
+            width: 100%;
+        }
+
+            .subheader > div {
+                display: table-cell;
+            }
+
+        .subheader-left {
+            width: 80%;
+        }
+
+        .subheader-right {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .subheader-info {
+            margin-top: 35px;
+            color: #0d66a6;
+            font-weight: bold;
+        }
+
+            .subheader-info img {
+                display: inline-block;
+                width: 60px;
+                height: 30px;
+                margin-left: -15px;
+                margin-right: -10px;
+                margin-top: -5px;
+            }
+
+        .form {
+        }
+
+        .form-header {
+            background: #0d66a6;
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        .form-footer {
+            background: #0d66a6;
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        .form-item {
+            display: table-row;
+        }
+
+        .form-last .form-item-label, .form-last .form-item-content {
+            border-bottom: 0;
+        }
+
+        .form-item-filled .form-item-label {
+            background-color: #e5e8ea;
+            color: #656565;
+        }
+
+            .form-item-filled .form-item-label strong {
+                font-weight: normal;
+            }
+
+        .form-item-label {
+            background-color: #f5f6f7;
+            width: 30%;
+            padding: 30px;
+            display: table-cell;
+            position: relative;
+            padding-left: 40px;
+            font-size: 20px;
+            border-bottom: 1px solid #b4b4b4;
+        }
+
+            .form-item-label strong {
+                letter-spacing: 0.3mm !important;
+            }
+
+        .form-item-label-purpose {
+            justify-content: flex-start;
+        }
+
+            .form-item-label-purpose .pointer {
+            }
+
+        .form-item-filled .form-item-label-sub {
+            font-size: 16px;
+            color: black;
+        }
+
+        .form-item-label-sub {
+            font-size: 18px;
+        }
+
+        .form-item-label-sub-check {
+            display: inline-block;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            height: 12px;
+            width: 6px;
+            border-bottom: 4px solid black;
+            border-right: 4px solid black;
+            margin-right: 5px;
+            margin-left: 2px;
+        }
+
+        .form-item-filled .pointer {
+            display: none;
+        }
+
+        .pointer {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: #0d66a6;
+            top: 35px;
+            left: 0;
+        }
+
+            .pointer:before {
+                content: "";
+                position: absolute;
+                right: -10px;
+                top: 0;
+                width: 0;
+                height: 0;
+                border-left: 10px solid #0d66a6;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+            }
+
+        .form-item-content {
+            display: table-cell;
+            width: 70%;
+            border-bottom: 1px solid #b4b4b4;
+        }
+
+        .form-item-content-purpose {
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+            .form-item-content-purpose:after {
+                content: '';
+                position: absolute;
+                top: 45%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: #b4b4b4;
+            }
+
+        .form-item-input {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 20px 10px;
+            white-space: nowrap;
+        }
+
+            .form-item-input input {
+                border: 2px solid #888888;
+                font-size: 18px;
+            }
+
+                .form-item-input input[type="checkbox"] {
+                    width: 25px;
+                    height: 25px;
+                    vertical-align: middle;
+                    margin-top: -3px;
+                    -webkit-appearance: none;
+                    border: 2px solid #888888;
+                }
+
+                    .form-item-input input[type="checkbox"]:checked {
+                        /* Prepare for placing the new checkmark. */
+                        position: relative;
+                        /* Do a bug fix to keep iOS from adding dark background. */
+                        background: none;
+                    }
+
+                        .form-item-input input[type="checkbox"]:checked::after {
+                            /* Place (position) the new checkmark. */
+                            position: absolute;
+                            top: 6px;
+                            left: 2px;
+                            content: "";
+                            width: 15px;
+                            height: 5px;
+                            border: 4px solid #0d66a6;
+                            border-right: none;
+                            border-top: none;
+                            -webkit-transform: rotate(-45deg);
+                            transform: rotate(-45deg);
+                        }
+
+        .form-item-content label {
+            margin-right: 10px;
+        }
+
+        .form-item-input-00 {
+            width: 20px;
+            padding: 15px;
+        }
+
+        .form-item-input-0000 {
+            width: 40px;
+            padding: 15px;
+        }
+
+        .form-item-input-money {
+            width: 120px;
+            padding: 15px;
+        }
+
+        .form-item-input-money-wrap {
+            display: inline-block;
+            position: relative;
+        }
+
+            .form-item-input-money-wrap:before {
+                content: "$";
+                position: absolute;
+                left: 5px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+        .sign {
+            display: table;
+            width: 100%;
+            border: 1px solid black;
+            height: 47px;
+            margin-top: 50px;
+        }
+
+        .sign-sig {
+            display: table-cell;
+            border-right: 1px solid black;
+            position: relative;
+        }
+
+        .sign-date {
+            display: table-cell;
+            width: 400px;
+            position: relative;
+        }
+
+        .sign label {
+            display: block;
+            margin-bottom: 45px;
+            position: absolute;
+            top: -30px;
+            left: 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .sign-sign {
+            background: black;
+            color: white;
+            text-transform: uppercase;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            position: absolute;
+            bottom: 13px;
+            left: -13px;
+            font-size: 16px;
+            width: 45px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .sign-pointer:before {
+            content: "";
+            position: absolute;
+            left: 25px;
+            bottom: 5px;
+            width: 0;
+            height: 0;
+            border-left: 18px solid black;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+        }
+
+
+
+        footer {
+            text-align: center;
+        }
+
+            footer p {
+                text-align: right;
+                font-size: 16px;
+            }
+
+            footer div {
+                color: #656565;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left"><h1><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjcuNTMzIiBoZWlnaHQ9IjUwLjA2NyIgdmlld0JveD0iMCAwIDIyNy41MzMgNTAuMDY3Ij4KICAgIDxkZWZzPgogICAgICAgIDxjbGlwUGF0aCBpZD0iOWphbHNydHRkYSI+CiAgICAgICAgICAgIDxwYXRoIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDY4IiBzdHlsZT0iZmlsbDpub25lIiBkPSJNMCAwaDIyNy41MzN2NTAuMDY3SDB6Ii8+CiAgICAgICAgPC9jbGlwUGF0aD4KICAgIDwvZGVmcz4KICAgIDxnIGRhdGEtbmFtZT0iR3JvdXAgODQiIHN0eWxlPSJjbGlwLXBhdGg6dXJsKCM5amFsc3J0dGRhKSI+CiAgICAgICAgPHBhdGggZGF0YS1uYW1lPSJQYXRoIDciIGQ9Ik02LjQxOSAzNC4yMjFhMjEuNDQyIDIxLjQ0MiAwIDAgMCAxNS4wMiA2LjA4OWM0LjE2MSAwIDYuNzA3LTEuNzM0IDYuNzA3LTMuOTQxIDAtMi42My0zLjAzNi0zLjY3LTguMDQzLTQuN0MxMi4zNDggMzAuMTQ0IDEuNSAyOC4yMDggMS41IDE3LjI5IDEuNDggOS41NDMgOC4yIDIuODcgMjAuMjQ3IDIuODdjNy41NDMgMCAxNC4xMDYgMi4yMDcgMTkuMTEzIDYuNDNsLTYuNjMgOC40NzRhMjIuMTQxIDIyLjE0MSAwIDAgMC0xMy4yNjEtNC43NTNjLTQuMDI2IDAtNS41NzMgMS41OS01LjU3MyAzLjU5NCAwIDIuNDE5IDIuODkyIDMuMjQ4IDguMTEgNC4yMjkgNy43NTUgMS41OSAxOC40NzkgMy44MDYgMTguNDc5IDE0LjI0MiAwIDkuMy02Ljk3NyAxNS40MjYtMTkuNiAxNS40MjZDMTEuMzU4IDUwLjUwOSA0LjcyOCA0Ny42IDAgNDMuMTc3eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtLjQ0MykiIHN0eWxlPSJmaWxsOiMwZDY2YTYiLz4KICAgICAgICA8cGF0aCBkYXRhLW5hbWU9IlBhdGggOCIgZD0iTTUyLjQ3IDYuMzM1YTYuMjA4IDYuMjA4IDAgMSAxIDYuMzMgNi4wNzloLS4xMjVhNi4xMTQgNi4xMTQgMCAwIDEtNi4yMDctNi4wMjF2LS4wNm0uNzc4IDkuNDcyaDEwLjg2OVY0OS4ySDUzLjI0OHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04LjA5NSkiIHN0eWxlPSJmaWxsOiMwZDY2YTYiLz4KICAgICAgICA8cGF0aCBkYXRhLW5hbWU9IlBhdGggOSIgZD0iTTkwLjIwNyAxNy43MDdjMTAuMDg5IDAgMTcuNDIyIDcuMjU2IDE3LjQyMiAxOC42MDZWMzguNkg4My4zNjVjLjYzNCAzLjExMiAzLjYgNS45MiA4LjY3NyA1LjkyYTEzLjY1MSAxMy42NTEgMCAwIDAgOC4zMjItMi44MzNsNC41ODQgNi42M2MtMy4zODMgMi45NzctOS4wMjQgNC40MzItMTQuMjQyIDQuNDMyLTEwLjUxMiAwLTE4LjYwNi02LjcwNy0xOC42MDYtMTcuNTY2IDAtOS42NzUgNy40NzYtMTcuNDg5IDE4LjEyNC0xNy40ODltLTcgMTMuOThIOTcuMjZjLS4yNzktMi4zNTEtMi4wNDctNS43MzQtNy4wNTMtNS43MzRhNi42ODkgNi42ODkgMCAwIDAtNi45ODYgNS43MzQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMS4xMjQgLTIuNzI5KSIgc3R5bGU9ImZpbGw6IzBkNjZhNiIvPgogICAgICAgIDxwYXRoIGRhdGEtbmFtZT0iUGF0aCAxMCIgZD0iTTExOS42MyAzLjY1aDEwLjg1OXYxNi42NjFhMTIuNjg3IDEyLjY4NyAwIDAgMSAxMC4wODktNC43N2M4LjQ1NyAwIDE1LjAyIDYuNTYzIDE1LjAyIDE3LjQ4OSAwIDExLjM0MS02LjYyMiAxNy41NjYtMTUuMDIgMTcuNTY2YTEzLjEzNCAxMy4xMzQgMCAwIDEtMTAuMDg5LTQuN3YzLjg3M0gxMTkuNjN6bTE3LjM1NCAzNy41NDJjNC4zIDAgNy41NDQtMy4xMTIgNy41NDQtOC4xNjFzLTMuMjQ4LTguMDUxLTcuNTQ0LTguMDUxYTguNzc5IDguNzc5IDAgMCAwLTYuNSAzLjAzNnYxMC4yMzJhOC42OTQgOC42OTQgMCAwIDAgNi41IDIuOTc3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTguNDU3IC0uNTYzKSIgc3R5bGU9ImZpbGw6IzBkNjZhNiIvPgogICAgICAgIDxwYXRoIGRhdGEtbmFtZT0iUGF0aCAxMSIgZD0iTTE4My41NTcgMTcuNzA3YzEwLjA4OSAwIDE3LjQzIDcuMjU2IDE3LjQzIDE4LjYwNlYzOC42aC0yNC4yNzJjLjYzNCAzLjExMiAzLjYgNS45MiA4LjY3NyA1LjkyYTEzLjY1MSAxMy42NTEgMCAwIDAgOC4zMjItMi44MzNsNC41OTIgNi42M2MtMy4zODMgMi45NzctOS4wMzIgNC40MzItMTQuMjUgNC40MzItMTAuNTEyIDAtMTguNjA2LTYuNzA3LTE4LjYwNi0xNy41NjYgMC05LjY3NSA3LjQ3Ni0xNy40ODkgMTguMTI0LTE3LjQ4OU0xNzYuNiAzMS42NTNoMTQuMDFjLS4yNzktMi4zNTEtMi4wMzgtNS43MzQtNy4wNTMtNS43MzRhNi42ODEgNi42ODEgMCAwIDAtNi45NzcgNS43MzQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNS41MjYgLTIuNzI5KSIgc3R5bGU9ImZpbGw6IzBkNjZhNiIvPgogICAgICAgIDxwYXRoIGRhdGEtbmFtZT0iUGF0aCAxMiIgZD0iTTIxMi45OCAxOC41MzZoMTAuODY4djQuMjI5QTE0LjkzNSAxNC45MzUgMCAwIDEgMjM0LjUgMTcuNjl2MTAuM2E4Ljg0IDguODQgMCAwIDAtMi42ODEtLjM0N2MtMi44MjUgMC02LjU2MyAxLjE3Ni03Ljk2NyAzLjExMlY1MS45SDIxMi45OHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMi44NTkgLTIuNzI5KSIgc3R5bGU9ImZpbGw6IzBkNjZhNiIvPgogICAgICAgIDxwYXRoIGRhdGEtbmFtZT0iUGF0aCAxMyIgZD0iTTI0NS45MDkgNDEuNDI4VjI2LjI4MWgtNS42NDl2LTkuMjZoNS42NDlWNy44N0gyNTYuN3Y5LjE1MWg2LjkwOXY5LjNIMjU2Ljd2MTIuMTNjMCAxLjkzNyAxLjEyNSAzLjM4MyAzLjAyOCAzLjM4M2E0LjMwOCA0LjMwOCAwIDAgMCAyLjc1Ny0uODQ2bDIuMTE0IDguMDE3Yy0xLjM0NSAxLjI0My00LjAyNiAyLjIxNi04LjA0MyAyLjIxNi02LjkxIDAtMTAuNjQ4LTMuMzgzLTEwLjY0OC05LjgxOSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM3LjA2NyAtMS4yMTQpIiBzdHlsZT0iZmlsbDojMGQ2NmE2Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=' alt="Siebert"></h1></div>
+        <div class="header-right">
+            <div><strong>Suitability Information</strong></div>
+            <div>FINRA Rule 2111 Requirement</div>
+        </div>
+    </header>
