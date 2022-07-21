@@ -18,11 +18,15 @@ namespace SiebertPdfGenerator.Services
         public static void GetSubmissionPdfPackage(List<SuitabilityModel> suitabilityModels)
         {
             var documents = new List<Document>();
+            //var counts = 0;
             foreach (var suitabilityModel in suitabilityModels)
             {
                 var document = ToSubmissionPdfPackage(suitabilityModel);
                 if(document != null)
                     documents.Add(document);
+                //counts++;
+                //if (counts == 32)
+                //    break;
             }
             var count = int.Parse(ConfigurationManager.AppSettings["pdfSplit"]);
 
@@ -75,7 +79,7 @@ namespace SiebertPdfGenerator.Services
             }
 
             var htmlToPdf = new HtmlToPdfConverter();
-            htmlToPdf.CustomWkHtmlArgs = "--dpi 110";
+            //htmlToPdf.CustomWkHtmlArgs = "--dpi 110";
             if (page == 1)
                 htmlToPdf.Margins = new PageMargins { Top = 55.372f, Bottom = 19.812f, Left = 19.812f, Right = 19.812f };
 
