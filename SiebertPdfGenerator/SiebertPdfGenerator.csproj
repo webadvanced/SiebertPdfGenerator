@@ -232,6 +232,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -246,7 +247,6 @@
     <Content Include="Views\Shared\page2-subheader.cshtml" />
     <None Include="Views\Shared\page1.cshtml" />
     <Content Include="Views\Shared\page2p2-dob-empty.cshtml" />
-    <Content Include="Views\Shared\page2p3.cshtml" />
     <None Include="Views\Shared\page2.cshtml" />
     <Content Include="Views\Shared\page2p2-dob-filled.cshtml" />
     <Content Include="Views\Shared\page2p3-income-empty.cshtml" />
