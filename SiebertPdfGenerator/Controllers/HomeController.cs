@@ -14,8 +14,6 @@ namespace SiebertPdfGenerator.Controllers
     {
         public ActionResult Index()
         {
-            var importedFile = FileImporter.Importer();
-            Pdf(importedFile);
             return View();
         }
 
@@ -32,12 +30,20 @@ namespace SiebertPdfGenerator.Controllers
 
             return View();
         }
-
-
-        [HttpPost, ValidateAntiForgeryToken]
-        public void Pdf(List<SuitabilityModel> suitabilityModels)
+        
+        public ActionResult Pdf()
         {
-            PdfService.GetSubmissionPdfPackage(suitabilityModels);
+            var importedFile = FileImporter.Importer();
+            PdfService.GetSubmissionPdfPackage(importedFile);
+
+            return View();
+        }
+
+        public ActionResult RemoveBlank(int pdfCount)
+        {
+            PdfService.RemoveBlank(pdfCount + 1);
+
+            return View();
         }
     }
 }

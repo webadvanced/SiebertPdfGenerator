@@ -15,6 +15,30 @@ namespace SiebertPdfGenerator.Services
 {
     public static class PdfService
     {
+        // Remove every 5th page from the merged pdfs because it added an extra blank page for some reason
+        public static void RemoveBlank(int pdfCount)
+        {
+            for (int count = 1; count < pdfCount; count++)
+            {
+                var fileName = count + ConfigurationManager.AppSettings["FileSuffix"];
+
+                var (filePath, relativePath) = GetApplicationFilePath(fileName, true);
+
+                var pdf = PdfReader.Open(filePath, PdfDocumentOpenMode.Import);
+
+                for (int i = pdf.PageCount; i > 0; i--)
+                {
+                    if (i % 5 == 0)
+                        pdf.Pages.RemoveAt(i - 1);
+                }
+
+                var fileNameUpdated = count + "-suitability-Updated.pdf";
+
+                var (filePathUpdated, relativePathUpdated) = GetApplicationFilePath(fileNameUpdated, true);
+                pdf.Save(filePathUpdated);
+            }
+        }
+
         public static void GetSubmissionPdfPackage(List<SuitabilityModel> suitabilityModels)
         {
             var documents = new List<Document>();
