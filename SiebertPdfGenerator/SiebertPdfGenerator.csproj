@@ -244,31 +244,81 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Views\Shared\page2-subheader.cshtml" />
-    <None Include="Views\Shared\page1.cshtml" />
-    <Content Include="Views\Shared\page2p2-dob-empty.cshtml" />
-    <None Include="Views\Shared\page2.cshtml" />
-    <Content Include="Views\Shared\page2p2-dob-filled.cshtml" />
-    <Content Include="Views\Shared\page2p3-income-empty.cshtml" />
-    <Content Include="Views\Shared\page2p3-income-filled.cshtml" />
-    <Content Include="Views\Shared\page2p4-networth-empty.cshtml" />
-    <Content Include="Views\Shared\page2p4-networth-filled.cshtml" />
-    <Content Include="Views\Shared\page2p5-fedtax-empty.cshtml" />
-    <Content Include="Views\Shared\page2p5-fedtax-filled.cshtml" />
-    <Content Include="Views\Shared\page2p6-marital-filled.cshtml" />
-    <Content Include="Views\Shared\page2p6-marital-empty.cshtml" />
-    <Content Include="Views\Shared\page2p11-risk-filled.cshtml" />
-    <Content Include="Views\Shared\page2p7-dependents-filled.cshtml" />
-    <Content Include="Views\Shared\page2p8-general-filled.cshtml" />
-    <Content Include="Views\Shared\page2p12-investment-filled.cshtml" />
-    <Content Include="Views\Shared\page2p10-time-filled.cshtml" />
-    <Content Include="Views\Shared\page2p12-investment-empty.cshtml" />
-    <Content Include="Views\Shared\page2p7-dependents-empty.cshtml" />
-    <Content Include="Views\Shared\page2p8-general-empty.cshtml" />
-    <Content Include="Views\Shared\page2p10-time-empty.cshtml" />
-    <Content Include="Views\Shared\page2p11-risk-empty.cshtml" />
-    <Content Include="Views\Shared\page2-footer.cshtml" />
-    <None Include="Views\Shared\page3.cshtml" />
+    <Content Include="Views\Shared\page2-subheader.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Views\Shared\page1.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Views\Shared\page2p2-dob-empty.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Views\Shared\page2.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Views\Shared\page2p2-dob-filled.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p3-income-empty.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p3-income-filled.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p4-networth-empty.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p4-networth-filled.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p5-fedtax-empty.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p5-fedtax-filled.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p6-marital-filled.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p6-marital-empty.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p11-risk-filled.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p7-dependents-filled.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p8-general-filled.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p12-investment-filled.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p10-time-filled.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p12-investment-empty.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p7-dependents-empty.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p8-general-empty.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p10-time-empty.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2p11-risk-empty.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\page2-footer.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Views\Shared\page3.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -280,8 +330,12 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\_Layout.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -303,8 +357,12 @@
     <Content Include="Views\Manage\ManageLogins.cshtml" />
     <Content Include="Views\Manage\SetPassword.cshtml" />
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\_LoginPartial.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
